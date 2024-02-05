@@ -1,6 +1,14 @@
 import type { StorybookConfig } from "@storybook/nextjs";
+import path from "path";
 
 const config: StorybookConfig = {
+  webpackFinal: async (config, { configType }) => {
+    if (config?.resolve?.modules) {
+      config?.resolve?.modules.push(path.resolve(__dirname, "../"));
+    }
+
+    return config;
+  },
   stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
   addons: [
     "@storybook/addon-links",
