@@ -1,6 +1,6 @@
 import * as React from "react";
 import Typography from "../Typography";
-import Button from "../Button";
+import Button from "../Button/Button";
 import Badge from "../Badge/Badge";
 import { cva } from "class-variance-authority";
 import { cn } from "../../lib/utils";
