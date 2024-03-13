@@ -1,7 +1,5 @@
 import * as React from "react";
 import Typography from "../Typography";
-import Button from "../Button/Button";
-import Badge from "../Badge/Badge";
 
 export interface MemberProps {
   variant?: "primary" | "secondary";

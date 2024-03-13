@@ -44,7 +44,7 @@ const Hero: React.FC<HeroProps> = ({ subtitle, title, desc, imgPath }) => {
         </AvatarGroups>
       </div>
       <div className="w-[55%]">
-        <img src={imgPath} alt="hero image" />
+        <img src={imgPath.url} alt="hero image" />
       </div>
     </div>
   );
