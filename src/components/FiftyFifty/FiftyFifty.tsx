@@ -39,7 +39,7 @@ const FiftyFifty: React.FC<FiftyFiftyProps> = ({
       </div>
       <div className="w-[50%] overflow-hidden px-4">
         <img
-          src={imgPath}
+          src={imgPath.url}
           alt="FiftyFifty image"
           className="w-full h-full object-cover"
         />
